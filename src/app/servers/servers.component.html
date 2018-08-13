@@ -2,7 +2,9 @@
   class="btn-primary"
   type="button"
   [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
 >
   Add server
 </button>
+<p [innerText]="serverCreationStatus"></p>
 <app-server></app-server>
