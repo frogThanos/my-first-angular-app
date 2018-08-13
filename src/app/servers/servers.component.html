@@ -13,7 +13,7 @@
 >
   Add server
 </button>
-<p [innerText]="serverCreationStatus"></p>
+<p *ngIf="serverCreated" [innerText]="serverCreationStatus"></p>
 <hr>
 <label>User Name</label>
 <input
