@@ -14,6 +14,7 @@
   Add server
 </button>
 <p *ngIf="serverCreated" [innerText]="serverCreationStatus"></p>
+<p *ngIf="!serverCreated">No server was created yet.</p>
 <hr>
 <label>User Name</label>
 <input
